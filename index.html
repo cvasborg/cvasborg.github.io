@@ -2,7 +2,7 @@
 <html class="no-js" >
 
 <head>
-  <title>Estatísticas</title>
+  <title>Estatisticas</title>
   <!-- Bootstrap -->
   <link href="css\bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css\bootstrap-responsive.min.css" rel="stylesheet" media="screen">
@@ -17,7 +17,6 @@
 
 <body ng-app="listaEstatistica" ng-controller="listaEstatisticaCtrl">
   <div id="exportable" class="row-fluid">
-
     <div class="span6">
       <div class="block">
         <div class="navbar navbar-inner block-header">
@@ -34,7 +33,6 @@
                 <th><a href="" ng-click="ordenarPor('statusDAS')">Status</a></th>
               </tr>
             </thead>
-
             <tbody>
               <tr ng-repeat="item in listaDAS | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
                 <td>{{$index+1}}</td>
@@ -44,7 +42,6 @@
                   <span ng-if="item.statusDAS == false"><small class="label label-danger"><i class="fa fa-clock-o"></i> X </small></span> </td>
                 </tr>
               </tbody>
-
             </table>
           </div>
         </div>
@@ -55,7 +52,6 @@
             <div class="muted pull-left">CD - Caso de Desenvolvimento</div>
             <div class="pull-right"><span class="badge badge-warning">{{documentoCD.total}}</span></div>
           </div>
-
           <div class="block-content collapse in" >
             <table class="table table-striped">
               <thead>
@@ -86,12 +82,9 @@
   <script src="css\jquery-1.9.1.min.js"></script>
   <script src="css\bootstrap.js"></script>
   <script src="css\app.js"></script> 
-  <!-- BASE DA VAL -->
-  <script src="css\listaCtrl.js"></script> 
+  <script src="css\listaCtrl.js"></script> <!-- BASE -->
   <script src="css\jquery.easy-pie-chart.js"></script>
   <script src="css\scripts.js"></script>
-
-
 <!-- EXPORTAR -->
   <script>
   function listaEstatisticaCtrl($scope) {
@@ -101,7 +94,6 @@
         });
         saveAs(blob, "Indicador.xls");
   };
-
   </script>
 </body>
 </html>
