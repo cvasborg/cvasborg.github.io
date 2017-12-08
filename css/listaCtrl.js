@@ -1,6 +1,6 @@
 angular.module("listaEstatistica").controller("listaEstatisticaCtrl", function ($scope) {
 $scope.totalGeral = 239;$scope.documentoDAS = {nome:'DAS - Documento de Arquitetura',total:'127', percentual:'53'};
-$scope.documentoCD = {nome:'CD - Caso de Desenvolvimento',total:'81', percentual:'33'};$scope.dtAtualizacao = '18-10-2017';$scope.listaDAS = [{sistema:'SISTEMA00',dtAtualizacaoDAS:'',dtAtualizacaoCD:'',statusDAS:false,statusCD:false},
+$scope.documentoCD = {nome:'CD - Caso de Desenvolvimento',total:'81', percentual:'33'};$scope.dtAtualizacao = '08-12-2017';$scope.listaDAS = [{sistema:'SISTEMA00',dtAtualizacaoDAS:'',dtAtualizacaoCD:'',statusDAS:false,statusCD:false},
 {sistema:'SISTEMA01',dtAtualizacaoDAS:'',dtAtualizacaoCD:'',statusDAS:false,statusCD:false},
 {sistema:'SISTEMA02',dtAtualizacaoDAS:'27/05/2016',dtAtualizacaoCD:'07/07/201',statusDAS:true,statusCD:true},
 {sistema:'SISTEMA03',dtAtualizacaoDAS:'',dtAtualizacaoCD:'',statusDAS:false,statusCD:false},
